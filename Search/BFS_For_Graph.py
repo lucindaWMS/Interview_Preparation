@@ -11,6 +11,7 @@ def bfs(graph, source):
 		order.append(node)
 
 		for i in graph[node]:
+			#if the graph is a tree, we don't need line 16
 			if i not in queue and i not in order:
 				queue.append(i)
 	return order
